@@ -22,7 +22,7 @@ type Time = {
 /// day. You can also assume that both t1 and t2 are well-formed (i.e., hours
 /// are between 1 and 12, and minutes are between 0 and 59).
 let diffMinutes t1 t2 =
-  failwith "TODO"
+  failwith "TODO" // REMOVE this line when you implement your own code
 
 /// StraightLine represents a line in a 2D plane where the line is represented
 /// by the equation y = ax + b. The first component is the slope a, and the
@@ -34,27 +34,27 @@ type StraightLine = int * int
 /// StraightLine that represents the mirror image of the given line with respect
 /// to the x-axis.
 let mirrorX (line: StraightLine) =
-  failwith "TODO"
+  failwith "TODO" // REMOVE this line when you implement your own code
 
 /// Write a function `mirrorY` that takes in a StraightLine and returns a new
 /// StraightLine that represents the mirror image of the given line with respect
 /// to the y-axis.
 let mirrorY (line: StraightLine) =
-  failwith "TODO"
+  failwith "TODO" // REMOVE this line when you implement your own code
 
 /// Write a function `removeOdd` that takes an integer list (int list) as input
 /// and returns a new integer list without odd numbers. The resulting list
 /// should preserve the order of the original list. For example, given [ 1; 2; 3
 /// ] the function should return [ 2 ].
 let removeOdd (lst: int list) =
-  failwith "TODO"
+  failwith "TODO" // REMOVE this line when you implement your own code
 
 /// Write a function `getSmallest` that takes in list of integers as input and
 /// returns the smallest number in the list (if exists). For example, given [ 1;
 /// 2; 3 ] the function will return Some 1. If the given list is empty, than the
 /// function simply returns None.
 let getSmallest lst =
-  failwith "TODO"
+  failwith "TODO" // REMOVE this line when you implement your own code
 
 /// Write a function `take` that takes in a list and an unsigned integer n
 /// (uint32) as input, and returns the first n elements from the list. For
@@ -62,7 +62,7 @@ let getSmallest lst =
 /// length of the list, then the function returns the list as it is. When n is
 /// zero, the function returns an empty list.
 let take lst (n: uint32) =
-  failwith "TODO"
+  failwith "TODO" // REMOVE this line when you implement your own code
 
 /// Write a function `runLength` that takes in a list and returns a list of
 /// pairs by applying run-length encoding. Specifically, the function replace n
@@ -71,7 +71,7 @@ let take lst (n: uint32) =
 /// (1, 1); (2, 3); (3, 2) ], because 1 consecutively appears once, 2 appears
 /// three times, and 3 appears twice.
 let runLength lst =
-  failwith "TODO"
+  failwith "TODO" // REMOVE this line when you implement your own code
 
 [<EntryPoint>]
 let main _args =
