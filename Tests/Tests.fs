@@ -10,29 +10,29 @@ type TestClass () =
   member __.``Problem 1.A``() =
     let t1 = { Hours = 1; Minutes = 30; AMPM = AM }
     let t2 = { Hours = 1; Minutes = 0; AMPM = PM }
-    let r = diffMinutes t1 t2
-    Assert.AreEqual (690, r)
+    let r: int = diffMinutes t1 t2
+    Assert.AreEqual<int> (690, r)
 
   [<TestMethod; Timeout 1000; TestCategory "1">]
   member __.``Problem 1.B``() =
     let t1 = { Hours = 1; Minutes = 30; AMPM = AM }
     let t2 = { Hours = 1; Minutes = 0; AMPM = AM }
-    let r = diffMinutes t1 t2
-    Assert.AreEqual (0, r)
+    let r: int = diffMinutes t1 t2
+    Assert.AreEqual<int> (0, r)
 
   [<TestMethod; Timeout 1000; TestCategory "1">]
   member __.``Problem 1.C``() =
     let t1 = { Hours = 10; Minutes = 0; AMPM = PM }
     let t2 = { Hours = 10; Minutes = 0; AMPM = PM }
-    let r = diffMinutes t1 t2
-    Assert.AreEqual (0, r)
+    let r: int = diffMinutes t1 t2
+    Assert.AreEqual<int> (0, r)
 
   [<TestMethod; Timeout 1000; TestCategory "1">]
   member __.``Problem 1.D``() =
     let t1 = { Hours = 10; Minutes = 5; AMPM = PM }
     let t2 = { Hours = 1; Minutes = 0; AMPM = AM }
-    let r = diffMinutes t1 t2
-    Assert.AreEqual (0, r)
+    let r: int = diffMinutes t1 t2
+    Assert.AreEqual<int> (0, r)
 
   [<TestMethod; Timeout 1000; TestCategory "2">]
   member __.``Problem 2.A``() =
